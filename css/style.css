@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Whitney Light';
-    src: url('. fonts/whitneylight.woff') format('woff');
+    src: url('.fonts/whitneylight.woff') format('woff');
 }
 
 @font-face {
@@ -89,22 +89,74 @@ img {
 }
 
 .nav-item { }
+
 .nav-link { }
+
 .btn { }
-.btn-small { }
-.btn-light { }
-.btn-login { }
-.mobile-toggle { }
+
+.btn:hover {
+    box-shadow: 0 .8rem 1.5rem rgba(0,0,0,.2);
+ }
+
+.btn-small {
+    font-size: 1.4rem;
+    padding: .7rem 1.6rem;
+    border-radius: 4rem;
+ }
+
+.btn-light { 
+    background-color: var(--light-clr);
+    color: var(--dark-clr);
+}
+.btn-light:hover { 
+    color: var(--brand-clr);
+}
+
+.btn-login {
+    margin-right: 1.6rem;
+    line-height: 1.8;
+ }
+
+.mobile-toggle {
+    display: flex;
+    font-size: 3.6rem;
+    color: var(--light-clr);
+    cursor: pointer;
+ }
+
+.btn-open{
+
+}
+
+.btn-close{
+display: none;
+}
+
 .bx { }
+
 .bx-menu { }
+
 .bx-x { }
-.row { }
+
+.row { 
+    display: grid;
+    grid-template-columns: repeat(var(--num-of-grid-columns), 1fr);
+}
+
 .hero-content-wrap { }
+
 .title { }
+
 .primary-title { }
+
 .hero-description { }
+
 .hero-btn-group { }
+
 .btn-large { }
-.bytn-light { }
+
+.btn-light { }
+
 .bx-download { }
+
 .btn-dark { }
